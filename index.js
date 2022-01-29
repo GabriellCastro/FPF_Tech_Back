@@ -1,13 +1,14 @@
 const express = require('express')
 const CORS = require('cors')
 const bodyParser = require('body-parser')
-const routes = require('./routes')
+const projectController = require('./controllers/projectController')
 
 require('dotenv').config()
 
 const app = express()
+app.use(CORS())
 app.use(bodyParser.json())
-app.use(routes)
+app.use('/project', projectController)
 
 const PORT = process.env.PORT;
 
