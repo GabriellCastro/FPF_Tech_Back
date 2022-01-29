@@ -1,7 +1,7 @@
 const mongoClient = require('mongodb').MongoClient;
 
 const DB_URL = 'mongodb://localhost:27017/';
-const DB_NAME = 'rest_aula';
+const DB_NAME = 'fpfTech';
 
 const connection = async () => {
   return mongoClient
