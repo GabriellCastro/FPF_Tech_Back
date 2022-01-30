@@ -24,7 +24,7 @@ router.post('/create', async (req, res) => {
   try {
     const { name_project, date_initial, date_final, value, risk, name_participant } = req.body
     await Project.add({ name_project, date_initial, date_final, value, risk, name_participant })
-    return res.status(201).send()
+    return res.status(201).json({ message: "Criado com Sucesso!, atualize a página inicial." })
   } catch (error) {
     return res.status(500).json({ erro: "Deu ruim na API..." })
   }
@@ -45,7 +45,7 @@ router.delete('/delete/:id', async (req, res) => {
   try {
     const { id } = req.params
     await Project.exclude(id)
-    return res.status(200).json({ message: "projeto deletado com sucesso!" })
+    return res.status(200).json({ message: "projeto deletado com sucesso!, Faça um reload na página!" })
   } catch (error) {
     return res.status(500).json({ erro: "Deu ruim na API..." })
   }

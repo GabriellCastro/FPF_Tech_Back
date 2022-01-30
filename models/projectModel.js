@@ -21,7 +21,7 @@ const update = ({ id, name_project, date_initial, date_final, value, risk, name_
     .updateOne({ _id: ObjectId(id) }, { $set: { name_project, date_initial, date_final, value, risk, name_participant } }))
 }
 
-const exclude = ({ id }) => {
+const exclude = (id) => {
   if(!ObjectId.isValid(id)) return null;
   connection().then((db) => db.collection('project').deleteOne({ _id: ObjectId(id) }))
 }
