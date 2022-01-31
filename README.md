@@ -23,7 +23,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
   <li>Faça clone do Projeto.</li>
 </ul>
   <p>Em em seguida abra no editor de sua preferência.</p>
-  <p>Após o download, execute os seguintes comandos "npm install" e "npm start" nas pastas "back-end"</p>
+  <p>Após o download, execute os seguintes comandos "npm install" e "npm start" na pasta "back-end"</p>
   
 <h3>Acesso do sistema Web</h3>
 <p>http://localhost:3000/</p>
