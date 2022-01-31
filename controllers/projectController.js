@@ -30,12 +30,12 @@ router.post('/create', async (req, res) => {
   }
 })
 
-router.put('/update', async (req, res) => {
+router.put('/update/:id', async (req, res) => {
   try {
     const { id } = req.params
     const { name_project, date_initial, date_final, value, risk, name_participant } = req.body
     await Project.update({ id, name_project, date_initial, date_final, value, risk, name_participant })
-    return res.status(204).send()
+    return res.status(201).json({ message: "Atualizado com Sucesso!, atualize a página inicial." })
   } catch (error) {
     return res.status(500).json({ erro: "Deu ruim na API..." })
   }
