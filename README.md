@@ -1,7 +1,7 @@
 <p align="center">
 <img src="https://w.prosas.com.br/system/empreendedores/avatar_capas/000/034/788/original/perfil_capa_empreendedor_6105d6cc76af400325e94d588ce511be5bfdbb73b437dc51eca43917d7a43e3d.png?1574362163">
 </p>
-<h1 align="center">FPF Tech - Desafio Técnico - GESTÃO DE PROJETOS [BACKEND]</h1>
+<h1 align="center">FPF Tech - GESTÃO DE PROJETOS [BACKEND]</h1>
 <p align="center">Desafio proposto foi desenvolver um gerenciador de projeto, contendo back-end, front-end e base de dados.</p>
 
 As seguintes ferramentas foram usadas na construção do projeto:
